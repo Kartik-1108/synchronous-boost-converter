@@ -209,7 +209,7 @@ The prototype produced approximately 11 V from a 6 V input at a 50% duty ratio.
 
 ### PWM waveform
 
-![PWM waveform](measurements/Switch_waveform.jpg)
+![PWM waveform](measurements/pwm_waveform.jpg)
 
 ### Hand-drawn circuit
 

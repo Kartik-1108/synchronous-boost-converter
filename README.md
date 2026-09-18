@@ -42,9 +42,9 @@ $$
 V_o = \frac{V_{in}}{1-D}
 $$
 
-\[
+$$
 V_o = \frac{6}{1-0.5}=12\text{ V}
-\]
+$$
 
 The difference between the ideal 12 V and measured ≈11 V is consistent with
 real converter losses and non-idealities such as MOSFET voltage drop, inductor
@@ -107,22 +107,22 @@ gate-to-source discharge path when the driver output is inactive.
 
 ### Inductor
 
-\[
+$$
 L=33\,\mu H
-\]
+$$
 
 At the 6 V, 50 kHz, 50% duty operating point, the idealized inductor ripple is:
 
-\[
+$$
 \Delta I_L = \frac{V_{in}D}{Lf_s}
-\]
+$$
 
-\[
+$$
 \Delta I_L =
 \frac{6(0.5)}
 {33\times10^{-6}(50\times10^3)}
 \approx 1.82\,A
-\]
+$$
 
 This relatively high ripple current is an important design consideration for
 the selected inductance.
@@ -131,17 +131,17 @@ the selected inductance.
 
 With a 20 Ω resistive load and approximately 11 V output:
 
-\[
+$$
 I_o=\frac{V_o}{R}
 =\frac{11}{20}
 \approx0.55\,A
-\]
+$$
 
-\[
+$$
 P_o=\frac{V_o^2}{R}
 =\frac{11^2}{20}
 \approx6.05\,W
-\]
+$$
 
 ---
 
@@ -149,10 +149,10 @@ P_o=\frac{V_o^2}{R}
 
 For an ideal boost converter, the critical inductance is:
 
-\[
+$$
 L_{crit}=
 \frac{D(1-D)^2R}{2f_s}
-\]
+$$
 
 For:
 
@@ -160,19 +160,19 @@ For:
 - \(R=20\,\Omega\)
 - \(f_s=50\,kHz\)
 
-\[
+$$
 L_{crit}
 =
 \frac{0.5(0.5)^2(20)}
 {2(50\times10^3)}
 =25\,\mu H
-\]
+$$
 
 Since:
 
-\[
+$$
 33\,\mu H > 25\,\mu H
-\]
+$$
 
 the operating point is expected to be in **CCM under the idealized model**.
 
@@ -193,9 +193,9 @@ The hardware was tested using:
 
 The oscilloscope captured a switching waveform of approximately:
 
-\[
+$$
 f_s \approx 50.0002\,kHz
-\]
+$$
 
 The prototype produced approximately 11 V from a 6 V input at a 50% duty ratio.
 
@@ -209,7 +209,7 @@ The prototype produced approximately 11 V from a 6 V input at a 50% duty ratio.
 
 ### PWM waveform
 
-![PWM waveform](measurements/pwm_waveform.jpg)
+![PWM waveform](measurements/Switch_waveform.jpg)
 
 ### Hand-drawn circuit
 
@@ -225,15 +225,15 @@ measurement, it is **not used to claim a measured efficiency**.
 
 Using the approximate values:
 
-\[
+$$
 P_{in}\approx6V\times1A=6W
-\]
+$$
 
 while the output estimate is:
 
-\[
+$$
 P_o\approx6.05W
-\]
+$$
 
 This would imply slightly above 100% efficiency, which is physically impossible
 for this converter and clearly indicates that the approximate measurements are
@@ -244,11 +244,11 @@ not sufficiently accurate or synchronized for an efficiency claim.
 A future measurement should record \(V_{in}\), \(I_{in}\), \(V_{out}\), and
 \(I_{out}\) simultaneously and calculate:
 
-\[
+$$
 \eta =
 \frac{V_{out}I_{out}}
 {V_{in}I_{in}}\times100\%
-\]
+$$
 
 This is preferable to inventing or back-calculating an efficiency value.
 

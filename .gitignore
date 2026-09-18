@@ -1,0 +1,27 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# MATLAB / Simulink
+*.asv
+*.autosave
+slprj/
+*.slxc
+*.mex*
+codegen/
+Simulink_cache/
+Simulink_Coder/
+
+# LTspice / circuit simulation generated files
+*.raw
+*.log
+*.net
+*.op.raw
+
+# General generated files
+build/
+dist/
+*.tmp
+*.bak

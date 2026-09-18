@@ -38,9 +38,9 @@ boost-diode implementation.
 
 The measured 11 V output is close to the ideal CCM boost prediction:
 
-\[
+$$
 V_o = \frac{V_{in}}{1-D}
-\]
+$$
 
 \[
 V_o = \frac{6}{1-0.5}=12\text{ V}

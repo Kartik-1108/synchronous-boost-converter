@@ -2,12 +2,14 @@
 
 ## Given
 
-- \(V_{in} = 6\,V\)
-- \(V_o \approx 11\,V\)
-- \(D = 0.5\)
-- \(f_s \approx 50\,kHz\)
-- \(L = 33\,\mu H\)
-- \(R = 20\,\Omega\)
+| Parameter | Value |
+|---|---:|
+| Input voltage, Vin | 6 V |
+| Output voltage, Vo | ≈ 11 V |
+| Duty ratio, D | 0.5 |
+| Switching frequency, fs | ≈ 50 kHz |
+| Inductor, L | 33 µH |
+| Load resistance, R | 20 Ω |
 
 ---
 
